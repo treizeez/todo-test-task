@@ -2,9 +2,10 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
+    "@wemake-services/javascript",
+    "@wemake-services/typescript/recommended",
     "eslint:recommended",
     "plugin:react-hooks/recommended",
-    "@wemake-services/typescript/recommended",
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
